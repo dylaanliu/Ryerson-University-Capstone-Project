@@ -1,1 +1,1 @@
-# Ryerson-University-Capstone-Project
+# Ryerson University Capstone Project
