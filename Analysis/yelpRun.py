@@ -1,15 +1,14 @@
 import pymongo
 import yelp
+import dbConnect
 
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["yelp"]
-mycol = mydb["review"]
+db = dbConnect.dbConnect()
 
 total = 0
 #for x in mycol.find({"business_id":"jtQARsP6P-LbkyjbO1qNGg"}, {"text":1}):
 #    print(x)
 
-review = mycol.find_one({"business_id":"jtQARsP6P-LbkyjbO1qNGg"}, {"_id":0,"text":1})
+review = db.find_one({"business_id":"jtQARsP6P-LbkyjbO1qNGg"}, {"_id":0,"text":1})
 
 yelp.findMatch(review)
 #use/create a word list for food
