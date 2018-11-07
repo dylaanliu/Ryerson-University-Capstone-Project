@@ -9,7 +9,7 @@ This project involves the use of the Yelp Dataset. The dataset can be retrieved 
 ## Tools
 The project uses the following tools.
 #### Programming Language and Database
-* Python and PyMongo
+* Python (3.7.1) and PyMongo
 * MongoDB
 
 #### Python Libraries
