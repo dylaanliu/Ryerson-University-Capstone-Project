@@ -13,5 +13,5 @@ The project uses the following tools.
 * MongoDB
 
 #### Python Libraries
-* NLTK
-* TextBlob
+* [NLTK](http://www.nltk.org/)
+* [TextBlob](https://github.com/sloria/TextBlob)
