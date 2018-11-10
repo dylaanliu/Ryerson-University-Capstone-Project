@@ -14,4 +14,6 @@ The project uses the following tools.
 
 #### Python Libraries
 * [NLTK](http://www.nltk.org/)
+* [pandas](https://pandas.pydata.org/)
+* [scikit-learn](https://scikit-learn.org/stable/)
 * [TextBlob](https://github.com/sloria/TextBlob)
