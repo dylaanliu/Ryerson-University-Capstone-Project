@@ -1,6 +1,7 @@
-from nltk import tokenize
-from nltk import ngrams
+from nltk import tokenize, ngrams
 
+# Split the reviews into sentences nltk tokenize
+# and return the reviews as a list of sentences
 def reviewToSentences(review):
     sentenceList = []
     sentences = tokenize.sent_tokenize(review)
@@ -28,8 +29,7 @@ def createReviewList(business_ID, db):
     reviewList = []
 	## Remove limit in final version
     for x in db.find({"business_id":business_ID},
-                     {"_id":0, "date":1,"text":1}).limit(10):
+                     {"_id":0, "date":1,"stars":1,"text":1}).limit(200):
         reviewList.append(x)
 
     return reviewList
-    
