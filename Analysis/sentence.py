@@ -29,7 +29,7 @@ def createReviewList(business_ID, db):
     reviewList = []
 	## Remove limit in final version
     for x in db.find({"business_id":business_ID},
-                     {"_id":0, "date":1,"stars":1,"text":1}).limit(200):
+                     {"_id":0, "date":1,"stars":1,"text":1}).limit(100):
         reviewList.append(x)
 
     return reviewList
