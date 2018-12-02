@@ -13,7 +13,10 @@ The project uses the following tools.
 * MongoDB
 
 #### Python Libraries
+* [matplotlib](https://matplotlib.org/)
 * [NLTK](http://www.nltk.org/)
+* [NumPy](http://www.numpy.org/)
 * [pandas](https://pandas.pydata.org/)
 * [scikit-learn](https://scikit-learn.org/stable/)
+* [SciPy](https://www.scipy.org/)
 * [TextBlob](https://github.com/sloria/TextBlob)
