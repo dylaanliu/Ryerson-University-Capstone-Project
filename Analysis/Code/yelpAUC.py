@@ -20,6 +20,7 @@ from itertools import cycle
 # AUC Multiclass reference from sklearn:
 # https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
 
+# Generate AUC values for the model
 def getAUC(X, y, clf, alg):
 
     y = label_binarize(y, classes=[1, 2, 3, 4, 5])
@@ -44,6 +45,7 @@ def getAUC(X, y, clf, alg):
     for num in range(1, 6):
         print('AUC for class ', num, ' %0.2f' % roc_auc[num-1])
 
+# Generate AUC values and AUC graph for the model
 def getAUCPlot(X, y, clf, alg):
     y = label_binarize(y, classes=[1, 2, 3, 4, 5])
     n_classes = y.shape[1]

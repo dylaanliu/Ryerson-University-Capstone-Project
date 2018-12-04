@@ -1,4 +1,7 @@
+## IMPORT ##
 import pymongo
+
+############
 
 # Establish connection to MongoDB
 def dbConnect():
